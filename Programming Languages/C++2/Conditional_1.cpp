@@ -12,7 +12,7 @@ using namespace std;
 //     cout << "Sum of "<< n << " natural numbers is " << sum;
 //   }
 //   else {
-//     cout << "Invalid Number";
+//     cout << "Invalid Number"; 
 //   }
 //   return 0;
 // }
