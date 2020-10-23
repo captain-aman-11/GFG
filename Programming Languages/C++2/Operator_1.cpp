@@ -40,3 +40,8 @@ int main(){
   cout << a; //Output: 1 i.e., x
   return 0;
 }
+
+
+/* Reason for above two programs to work differently : Operator Associativity
+ Operator Associativity: In programming languages, the assoicativity of an operator is a property that determines how operators of the same precedence
+ are grouped in the absence of parenthesis */

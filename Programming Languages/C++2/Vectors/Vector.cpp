@@ -9,10 +9,10 @@
  int main(){
    vector <int> v;
    v.push_back(10); // Inserting elements into vector
-   v.push_back(30);
    v.push_back(20);
+   v.push_back(30);
 
-   // Short Methods to print Vectors
+   // Short Method to print Vectors ( for each loop )
    for(auto x : v){
      cout << x << " ";
    }
