@@ -15,3 +15,25 @@ MODIFIERS:
 */
 
 // C++ program to illustrate the Modifiers in Vectors
+#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
+
+int main() {
+  //Assign vector
+  vector<int> v1;
+
+  // fill the array with 10 five times
+  v1.assign(5,10);
+
+  cout << "The vector elements are: ";
+  for(int i=0; i < v1.size(); i++)
+  cout << v1[i] << " ";
+
+  //inserts 15 to the last position
+  v1.push_back(15);
+  int n = v1.size();
+  cout << "\nThe last element is : "<< v1[n-1];
+
+
+}
