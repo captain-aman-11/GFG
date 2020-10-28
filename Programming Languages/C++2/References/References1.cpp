@@ -45,16 +45,29 @@ using namespace std;
 
   /* ii. Avoiding a copy of large structures: Imagine a function that has to receive a large object. If we pass it without reference,
   a new copy of it is created which causes wastage of CPU time and memory. We can use reference to avoid this. */
+  //
+  // void print(vector<int> &v){
+  //   for(auto x: v)
+  //   cout << x << " ";
+  // }
+  //
+  // int main(){
+  //   vector<int> v;
+  //   for(int i=0; i<1000; i++)
+  //   v.push_back(i);
+  //   print(v);
+  //   return 0;
+  // }
 
-  void print(vector<int> &v){
-    for(auto x: v)
-    cout << x << " ";
-  }
+  /* Modifications in for each loop -> */
 
   int main(){
-    vector<int> v;
-    for(int i=0; i<1000; i++)
-    v.push_back(i);
-    print(v);
+    vector<int> vect{10,20,30,40,50};
+
+    for(auto &x: vect)
+    x = x + 5;
+
+    for(auto x: vect)
+    cout << x << " ";
     return 0;
   }
