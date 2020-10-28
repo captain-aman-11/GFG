@@ -40,8 +40,8 @@ int main(){
   cout << "\n\nVector is empty";
 
   //Shrinks the vector
-  // v1.shrink_to_fit();
-  cout << "\n Vector elements are: ";
+  v1.shrink_to_fit();
+  cout << "\nVector elements are: ";
   for(auto it = v1.begin(); it!= v1.end(); it++)
   cout << *it << " ";
 
