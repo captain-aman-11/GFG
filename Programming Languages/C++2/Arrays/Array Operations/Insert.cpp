@@ -4,6 +4,8 @@
 using namespace std;
 
 int insert(int arr[], int noToInsert, int arrSize, int capacity, int position ){
+
+
   if(arrSize == capacity)
   return arrSize; //When the array is already full
 
@@ -13,7 +15,7 @@ int insert(int arr[], int noToInsert, int arrSize, int capacity, int position ){
   arr[i+1] = arr[i]; //Shifting all elements one block ahead
 
   arr[idx] = noToInsert;
-  return arrSize+1;
+  return arrSize;
 }
 
 int main(){
@@ -22,6 +24,8 @@ int main(){
   int arrSize = 3; //Three elements are filled till now
   int noToInsert = 7;
   int position = 2;
+
+
   insert(arr,noToInsert,arrSize,capacity,position);
   for(int i=0; i < capacity ; i++){
     cout << arr[i] << endl;
