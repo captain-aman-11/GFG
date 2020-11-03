@@ -7,7 +7,7 @@
  using namespace std;
 
  int main(){
-   vector <int> v;
+   vector <int> v; //Creating a vector
    v.push_back(10); // Inserting elements into vector
    v.push_back(20);
    v.push_back(30);
