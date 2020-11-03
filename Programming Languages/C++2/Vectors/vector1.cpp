@@ -12,10 +12,10 @@ int main(){
 }
 
 //Intializing a vector
-int main(){
-  vector<int> v {10,20,30,40,50};
-  for(auto x : v){
-    cout << x << " ";
-  }
-  return 0;
-}
+// int main(){
+//   vector<int> v {10,20,30,40,50};
+//   for(auto x : v){
+//     cout << x << " ";
+//   }
+//   return 0;
+// }
