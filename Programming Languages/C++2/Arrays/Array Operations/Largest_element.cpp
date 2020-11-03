@@ -1,5 +1,7 @@
 //Largest element in an Array
 
+//Naive approach
+
 #include <iostream>
 using namespace std;
 

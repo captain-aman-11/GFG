@@ -12,7 +12,7 @@ int search(int arr[], int arrSize,int x){
 }
 
 int main(){
-  int x = 17; // Number needed to be searched
+  int x = 7; // Number needed to be searched
   int arr[] = {20,5,7,25};
   int arrSize = 4;
   cout << "Index is : " << search(arr,4,x);
