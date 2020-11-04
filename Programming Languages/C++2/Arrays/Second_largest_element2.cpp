@@ -17,7 +17,8 @@ int secondLargest(int arr[], int arrSize){
     }
 
     else if(arr[i] != arr[largest]) // Checking for all the numbers except for the largest number
-      if(res == -1 || arr[i] > arr[res])
+
+      if(res == -1 || arr[i] > arr[res]) //TODO: Properly comment what's happening here
         res = i;
 
   }
