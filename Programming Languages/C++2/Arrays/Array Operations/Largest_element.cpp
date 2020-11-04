@@ -23,6 +23,7 @@ int main(){
   int arrSize =5;
   int arr[] = {2, 5,100, 15,22};
   int ans = LargestElement(arr,arrSize);
-  cout <<"Ïndex of the largest elemnt is : " << ans;
+  cout <<"Ïndex of the largest elemnt is : " << ans << endl;
+  cout << "Largest Element is : " << arr[ans];
   return 0;
 }

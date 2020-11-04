@@ -1,41 +1,26 @@
-//Delete from an array
+// Largest Element in an Array
 
 #include <iostream>
 using namespace std;
 
-int del(int arr[], int arrSize, int noToDelete){
+int findLargest(int arr[], int arrSize){
+  int res =0;
 
-  int i; //Delaring a local index
+  for(int i=1; i < arrSize ;i++){
+    if(arr[i] > arr[res])
+    res = i;
+  }
 
-  //checking for the index of the number
-  for(i =0; i < arrSize; i++)
-    if(arr[i] == noToDelete)
-      break;
-
-
-    if(i < arrSize) //If the no. is found
-    {
-      arrSize = arrSize -1; //Reducing array size by one
-      for(int j = i; j < arrSize; j++)
-        arr[j] = arr[j+1];
-    }
-    return arrSize;
+    return res;
 }
 
 
-//Driver program to test above function
 int main(){
-  int arr[] = {2,4,5,8,22,33};
+  int arr[] = {2,4,12,33,77,2344,324,23,34};
   int arrSize = sizeof(arr)/sizeof(arr[0]);
-  int noToDelete;
-  for(auto x : arr)
-    cout << x << " ";
-  cout << "\n\nEnter the no. you wwant to delete from the array : "   << endl;
-  cin >> noToDelete;
-  arrSize = del(arr,arrSize,noToDelete);
 
-  for(int i=0; i < arrSize; i++)
-    cout << arr[i] << " ";
+  int ans = findLargest(arr,arrSize);
+  cout << "Largest no. Index is: " << ans;
 
-  return 0;
+    return 0;
 }
