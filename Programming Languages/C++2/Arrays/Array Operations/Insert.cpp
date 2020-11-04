@@ -15,7 +15,7 @@ int insert(int arr[], int noToInsert, int arrSize, int capacity, int position ){
   arr[i+1] = arr[i]; //Shifting all elements one block ahead
 
   arr[idx] = noToInsert;
-  return arrSize;
+  return arrSize+1;// It increses the elments count
 }
 
 int main(){
