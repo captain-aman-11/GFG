@@ -53,3 +53,29 @@ int main(){
 
   return 0;
 }
+
+// Efficient Approach
+
+int main(){
+  int arrSize;
+  cin >> arrSize;
+
+  int arr[arrSize];
+  for(int i=0; i < arrSize; i++)
+    cin >> arr[i];
+
+  int max = 0;
+  int min = 0;
+
+  for(int i=0; i < arrSize ;i++){
+    if(arr[i] > arr[max]){
+      max = i;
+    }
+    if(arr[i] < arr[min]){
+      min = i;
+    }
+  }
+
+  int span = arr[max] - arr[min];
+  cout << span;
+}
