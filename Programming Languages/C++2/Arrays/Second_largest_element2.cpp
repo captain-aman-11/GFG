@@ -8,6 +8,16 @@ using namespace std;
 int secondLargest(int arr[], int arrSize){
   int res = -1, largest = 0;
 
+  /*Logic for the code-
+
+   -> If arr[i] = arr[largest] : Ignore
+      If arr[i] < arr[largest]
+        -> If res == -1 : res = i
+        -> If a[i] < a[res] : Ignore
+        -> If a[i] > a[res] : res = i
+
+   */
+
   for(int i =0; i < arrSize; i++){
 
     // Program to find the largest
