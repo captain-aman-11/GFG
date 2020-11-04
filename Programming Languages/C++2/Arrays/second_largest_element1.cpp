@@ -44,3 +44,5 @@ int main(){
   cout << "And the second largest Number is : " << arr[ans];
   return 0;
 }
+
+// Time complexity : O(n)
