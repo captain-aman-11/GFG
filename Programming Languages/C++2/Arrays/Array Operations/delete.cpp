@@ -1,44 +1,41 @@
-// C++ program to remove a given element from an array
-#include<bits/stdc++.h>
+//Delete from an array
+
+#include <iostream>
 using namespace std;
 
-// This function removes an element x from arr[] and
-// returns new size after removal (size is reduced only
-// when x is present in arr[]
-int deleteElement(int arr[], int n, int x)
-{
-// Search x in array
-int i;
-for (i=0; i<n; i++)
-	if (arr[i] == x)
-		break;
+int del(int arr[], int arrSize, int noToDelete){
 
-// If x found in array
-if (i < n)
-{
-	// reduce size of array and move all
-	// elements on space ahead
-	n = n - 1;
-	for (int j=i; j<n; j++)
-		arr[j] = arr[j+1];
+  int i; //Delaring a local index
+
+  //checking for the index of the number
+  for(i =0; i < arrSize; i++)
+    if(arr[i] == noToDelete)
+      break;
+
+
+    if(i < arrSize) //If the no. is found
+    {
+      arrSize = arrSize -1; //Reducing array size by one
+      for(int j = i; j < arrSize; j++)
+        arr[j] = arr[j+1];
+    }
+    return arrSize;
 }
 
-return n;
-}
 
-/* Driver program to test above function */
-int main()
-{
-	int arr[] = {11, 15, 6, 8, 9, 10};
-	int n = sizeof(arr)/sizeof(arr[0]);
-	int x = 6;
+//Driver program to test above function
+int main(){
+  int arr[] = {2,4,5,8,22,33};
+  int arrSize = sizeof(arr)/sizeof(arr[0]);
+  int noToDelete;
+  for(auto x : arr)
+    cout << x << " ";
+  cout << "\n\nEnter the no. you wwant to delete from the array : "   << endl;
+  cin >> noToDelete;
+  arrSize = del(arr,arrSize,noToDelete);
 
-	// Delete x from arr[]
-	n = deleteElement(arr, n, x);
+  for(int i=0; i < arrSize; i++)
+    cout << arr[i] << " ";
 
-	cout << "Modified array is \n";
-	for (int i=0; i<n; i++)
-	cout << arr[i] << " ";
-
-	return 0;
+  return 0;
 }
