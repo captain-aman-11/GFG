@@ -21,7 +21,7 @@ int main(){
     for(int i=0; i < arrSize; i++){
       for(int j=i ; j < arrSize; j++){
           for(int k=i; k <=j ; k++){
-            cout << arr[k] << " ";
+            cout << arr[k] << "\t";
           }
           cout << endl;
       }
