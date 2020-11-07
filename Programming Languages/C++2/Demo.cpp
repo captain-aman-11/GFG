@@ -1,15 +1,18 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-void fun(int n){
-  if ( n < 1)
-    return; // Coz it's a void function, so no value with return;
-
-  cout << n << endl;
-  fun(n-1);
-  cout << n << endl;
-}
-
 int main(){
-  fun(3);
+  int arr[] = {10,20,5,7};
+  int n = sizeof(arr)/sizeof(arr[0]);
+  sort(arr,arr+n);
+
+  for(int x: arr)
+    cout << x << " ";
+
+  sort(arr,arr + n,greater<int>);
+  for(int x: arr)
+    cout << x << " ";
+
+  return 0;
 }
