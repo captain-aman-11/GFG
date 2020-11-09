@@ -14,7 +14,8 @@ using namespace std;
 //   else {
 //     cout << "Invalid Number";
 //   }
-//   return 0;
+//
+//  return 0;
 // }
 
 // Write ap program to to take age and gender of a user and print one of the following as output. i. male kid ii. female kid iii. male adult iv. female adult
