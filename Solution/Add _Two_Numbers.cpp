@@ -19,6 +19,7 @@ public:
 
             if (l1 != NULL)
             {
+
                 sum += l1->val;
                 l1 = l1->next;
             }
