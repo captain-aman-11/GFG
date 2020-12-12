@@ -76,6 +76,16 @@ int getMax(Node *root)
     return max((root->key), max(getMax(root->left), getMax(root->right)));
 }
 
+int getHeight(Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+
+    return max(getHeight(root->left), getHeight(root->right)) + 1;
+}
+
 //Driver Program
 int main()
 {
@@ -114,4 +124,8 @@ int main()
     //Maximum of a binary Tree
     int max = getMax(root);
     cout << "\n\nMaximum of the Tree is : " << max << endl;
+
+    //Height of a binary tree
+    int height = getHeight(root);
+    cout << "\n\nHeight of the Tree is : " << height << endl;
 }
