@@ -8,15 +8,15 @@ using namespace std;
 
 void swap(int *a, int *b)
 {
-    int *temp = a;
-    a = b;
-    b = temp;
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 int main()
 {
 
-    int arr[] = {12, 13, 4, 3, 7, 6, 1, 2, 5};
+    int arr[] = {12, 13, 4, 3, 7, 6, 1, 8, 9, 6, 2, 5};
 
     int arrSize = sizeof(arr) / sizeof(arr[0]);
 
@@ -25,7 +25,6 @@ int main()
 
         for (int j = 0; j < arrSize - itr - 1; j++)
         {
-
             if (arr[j] > arr[j + 1])
             {
                 swap(&arr[j], &arr[j + 1]);
