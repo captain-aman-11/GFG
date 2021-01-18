@@ -39,11 +39,12 @@ main_program{
     //Smile
     penDown();
 
-    repeat(150){
-        forward(1);
-        right(1);
+    repeat(90){
+        forward(0.8);
+        right(2);
         wait(0.000001);
     }
+
     wait(115);
 
 
