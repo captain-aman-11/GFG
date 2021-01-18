@@ -2,6 +2,7 @@
 
 main_program{
     turtleSim();
+    wait(5);
 
     repeat(360){
         forward(1);
@@ -33,7 +34,7 @@ main_program{
 
     penUp();
 
-    right(90);
+    right(100);
     forward(38);
 
     //Smile
@@ -44,6 +45,8 @@ main_program{
         right(2);
         wait(0.000001);
     }
+    penUp();
+    forward(100000);
 
     wait(115);
 
