@@ -12,6 +12,7 @@ void init(int arr[], int size)
     }
 }
 
+//Insertion in a Hash Table
 int insert(int arr[], int value, int size)
 {
     //Generating Key
@@ -33,6 +34,26 @@ int insert(int arr[], int value, int size)
 
     arr[index] = value;
     return 1;
+}
+
+//Deletion in a Hash Table
+
+bool delete (int arr[], int value, int size)
+{
+    int key = value % size;
+    int index = key;
+
+    while (arr[index] != value)
+    {
+        index = (index + 1) % size;
+
+        if (index == 0)
+        {
+            return 0;
+        }
+    }
+    arr[index] = -1;
+    return 0;
 }
 
 int main()
