@@ -38,7 +38,7 @@ int insert(int arr[], int value, int size)
 
 //Deletion in a Hash Table
 
-bool delete (int arr[], int value, int size)
+int del(int arr[], int value, int size)
 {
     int key = value % size;
     int index = key;
@@ -75,6 +75,8 @@ int main()
     insert(arr, 24, size);
     insert(arr, 25, size);
     insert(arr, 26, size);
+    del(arr, 26, size);
+    del(arr, 56, size);
 
     for (int arrElement : arr)
     {
