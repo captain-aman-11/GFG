@@ -1,4 +1,5 @@
 // Implementation of a Hash table using Array
+// Linear Probing or Closed Hashing
 
 #include <iostream>
 using namespace std;
