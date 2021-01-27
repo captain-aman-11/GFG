@@ -10,7 +10,7 @@ struct node
     struct node *next;
 };
 
-void insert(int value)
+void int)
 {
     struct node *newNode = new node;
     newNode->data = value;
@@ -46,4 +46,12 @@ int main()
     {
         chain[i] = NULL;
     }
+
+    insert(20);
+    insert(35);
+    insert(47);
+    insert(52);
+    insert(64);
+    insert(33);
+    insert(48);
 }
