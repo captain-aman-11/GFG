@@ -20,6 +20,7 @@ int main()
 
     int arrSize = sizeof(arr) / sizeof(arr[0]);
 
+    //Bubble Sort
     for (int itr = 0; itr < arrSize - 1; itr++)
     {
 
