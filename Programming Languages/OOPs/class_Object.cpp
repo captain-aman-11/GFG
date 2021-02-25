@@ -5,9 +5,17 @@ using namespace std;
 // -> class keyword is used to define a car
 class Car
 {
+public:
     int Number;
     int Model_No;
-    char name[20];
+    string name;
+
+    void print()
+    {
+        cout << "Name: " << name << endl;
+        cout << "Model_No: " << Model_No << endl;
+        cout << "Number: " << Number << endl;
+    }
 };
 
 //Driver Program
@@ -16,7 +24,11 @@ int main()
 
     //Creating an object
     Car c;
+    c.Number = 20;
+    c.Model_No = 01;
+    c.name = "BMW";
 
+    c.print();
     cout << sizeof(c) << endl;
 }
 
